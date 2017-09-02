@@ -103,5 +103,5 @@ tidydata$activity_mean <- apply(tidydata[,3:68], 1, mean)
 ## Save the tidy result into a tidydata.csv file  
 setwd("C:/GIT/datasciencecoursera/getting_cleaning_data") 
 #write.csv(tidydata, file = 'tidydata.csv', row.names = FALSE, quote = FALSE)  
-write.csv(tidydata, file = 'tidydata.txt', row.names = FALSE, quote = FALSE)  
-
+#write.csv(tidydata, file = 'tidydata.txt', row.names = FALSE, quote = FALSE)  
+write.table(tidydata, file = 'tidydata.txt', row.names = FALSE, quote = FALSE) 
